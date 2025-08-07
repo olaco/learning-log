@@ -1,10 +1,10 @@
 # 📝 Discord Logger Bot to Google Sheets
 
-Logs messages from Discord directly into Google Sheets in real time.
+.
+Discord Bot + Google Sheets Integration (with Timestamp Feature).
 
 ## 🚀 Features
-- Discord bot built with `discord.py`
-- Google Sheets logging with `gspread`
+- Automatic timestamp for each message
 - `.env` for hiding secrets
 
 ## 📦 Tech
@@ -18,3 +18,13 @@ Python · Discord API · Google API · gspread
 
 ## 📂 Structure
 
+project/
+│
+├── bot.py
+|── Install dependencies
+├── .env
+├── credentials.json
+├── README.md
+
+
+https://github.com/olaco/learning-log/compare/main?diff=unified&w

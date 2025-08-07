@@ -1,8 +1,10 @@
 import os
 import discord
 import gspread
-import json
+from datetime import datetime
 from google.oauth2.service_account import Credentials
+
+import json
 from dotenv import load_dotenv
 
 load_dotenv() 
@@ -24,12 +26,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if message.author == client.user:
         return
 
     if message.content.startswith('log '):
         entry = message.content[4:]  # Get the text after 'log '
-        sheet.append_row([str(message.author), entry])
+        sheet.append_row([str(message.author), entry, timestamp])
         await message.channel.send('Logged to Google Sheet ✅')
 
-client.run(os.getenv(" DISCORD_BOT_TOKEN"))
+client.run(os.getenv("DISCORD_BOT_TOKEN"))
