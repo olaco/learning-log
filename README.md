@@ -1,14 +1,14 @@
 # 📝 Discord Logger Bot to Google Sheets
 
 .
-Discord Bot + Google Sheets Integration (with Timestamp Feature).
+Discord Bot auto-log + Google Sheets Integration (with Timestamp Feature).
 
 ## 🚀 Features
 - Automatic timestamp for each message
 - `.env` for hiding secrets
 
 ## 📦 Tech
-Python · Discord API · Google API · gspread
+Python · Discord API + discord built-in command system · Google API · gspread
 
 ## 🔧 How to Run
 
